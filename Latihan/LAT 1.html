@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div {
+      background-color: lightgrey;
+      width: 300px;
+      border: 2px solid yellow;
+      padding: 50px;
+      margin: 50px;
+       box-shadow: 
+        0 0 0 2px yellow, /* Border luar */
+        0 0 0 15px green; /* Border dalam */
+    }
+    p.dashed {border-style: dashed;}
+    .text-shadow-example {
+  text-shadow: 0px 0px 10px rgb(10, 34, 252); /* offsetX offsetY blurRadius color */
+    }.underline-red {
+  text-decoration: underline;
+  text-decoration-color: red;
+  ;
+}
+
+    </style>
+    </head>
+    <body>
+    
+    <h2></h2><br>
+    <p class="dashed">Demonstrating the Box Model</p>
+    <div><strong><span class="underline-red">text is the content of the box.</span></strong> We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,<span class="text-shadow-example"> sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+    </body>
+    </html>
+    
+    

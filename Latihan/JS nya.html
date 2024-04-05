@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Challenge</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: lightgrey;
+        }
+
+        table tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        table tr:hover {
+            background-color: grey;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+        }
+
+        button {
+            margin-top: 5%;
+        }
+
+        /* Menyesuaikan ukuran teks untuk input */
+        input[type="text"] {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Arithmetic</h1>
+        <table cellpadding="10" border="1">
+            <tr style="background-color: lightgray;">
+                <th>Variabel</th>
+                <th>Nilai</th>
+                <th rowspan="5"><img id="gambarHtml" src="https://www.techfor.id/wp-content/uploads/2019/12/html.png"></th>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>
+                    <input type="text" id="inputA">
+                    <span id="nilai-a"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>
+                    <input type="text" id="inputB">
+                    <span id="nilai-b"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td>
+                    <input type="text" id="inputC">
+                    <span id="nilai-c"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Hasil</td>
+                <td id="hasil"></td> <!-- Update id menjadi "hasil" -->
+            </tr>
+        </table>
+        <button id="ubah-nilai">Submit</button>
+    </div>
+    <script>
+        function hitung(a, b, c) {
+            return a + b - c;
+        }
+
+        function tampilHasil() {
+            let a = parseInt(document.getElementById('inputA').value);
+            let b = parseInt(document.getElementById('inputB').value);
+            let c = parseInt(document.getElementById('inputC').value);
+            let hasilHitung = hitung(a, b, c);
+
+            // Memperbarui teks pada kolom "Hasil"
+            document.getElementById("hasil").innerText = hasilHitung;
+        }
+
+        const ubahNilai = () => {
+            const inputA = document.getElementById("inputA").value;
+            const inputB = document.getElementById("inputB").value;
+            const inputC = document.getElementById("inputC").value;
+
+            // Memperbarui teks pada masing-masing kolom nilai
+            document.getElementById("nilai-a").innerText = inputA;
+            document.getElementById("nilai-b").innerText = inputB;
+            document.getElementById("nilai-c").innerText = inputC;
+
+            // Memanggil fungsi tampilHasil untuk menampilkan hasil
+            tampilHasil();
+
+            document.getElementById("gambarHtml").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png";
+        }
+
+        document.getElementById("ubah-nilai").addEventListener("click", ubahNilai);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluasi</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        th{
+            background-color: lightgrey;
+        }
+        
+        table tr:nth-child(even){
+            background-color: lightgray;
+        }
+        table tr:hover{
+            background-color: lightgray;
+        }
+
+        .fungsi {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+        }
+
+        button {
+            margin-top: 5%;
+        }
+
+        input [type="text"] {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fungsi">
+        <h1>Evaluasi</h1>
+        <table cellpadding="10" border="1">
+            <tr>
+                <th>Variabel</th>
+                <th>Nilai</th>
+                <th rowspan="5"><img id="" src=""></th>
+            </tr>
+<tr>
+    <td>A</td>
+    <td>
+        <input type="text" id="inputA">
+        <span id="nilai-a"></span>
+    </td>
+</tr>
+<tr>
+    <td>B</td>
+    <td>
+        <input type="text" id="inputB">
+        <span id="nilai-b"></span>
+    </td>
+</tr>
+<tr>
+    <td>C</td>
+    <td>
+        <input type="text" id="inputC">
+        <span id="nilai-c"></span>
+    </td>
+</tr>
+<tr>
+    <td>Hasil</td>
+    <td id="hasil"></td>
+</tr>
+        </table>
+        <button id="ubah-nilai">Submit</button>
+    </div>
+    <script>
+        function hitung(a, b, c,){
+            return a + b - c;
+        }
+
+        function tampilanHasil(){
+            let a = parseInt(document.getElementById('inputanA').value);
+            let b = parseInt(document.getElementById('inputanB').value);
+            let c = parseInt(document.getElementById('inputanC').value);
+            let hasilHitung = hitung(a, b, c,);
+            document.getElementById("hasil").innerText = hasilHitung;
+        }
+
+        const ubahNilai = () => {
+            const inputA = document.getElementById("inputanA").value;
+            const inputB = document.getElementById("inputanB").value;
+            const inputC = document.getElementById("inputanC").value;
+
+            document.getElementById("nilai-a").innerText = inputA;
+            document.getElementById("nilai-b").innerText = inputB;
+            document.getElementById("nilai-c").innerText = inputC;
+            
+            tampilanHasil();
+
+            document.getElementById(gambarHtml).src = "";
+        }
+        document.getElementById("ubah-nilai").addEventListener("click", ubahNilai);
+     </script>
+</body>
+</html>
