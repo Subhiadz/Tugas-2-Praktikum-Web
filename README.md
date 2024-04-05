@@ -149,6 +149,12 @@ Repositori ini berisi proyek-proyek yang dikembangkan dalam rangka memenuhi tuga
 </li>
 </ol>
 <p class="has-line-data" data-line-start="129" data-line-end="130">Setelah mempelajari dasar-dasar, Anda dapat memperluas pengetahuan Anda dengan mencoba membangun halaman web yang lebih kompleks atau belajar tentang framework dan library yang berhubungan dengan HTML, CSS, dan JavaScript seperti Bootstrap, React, atau Vue.js.</p>
+
+## Contoh Proyek
+
+![image](https://github.com/Subhiadz/Tugas-2-Praktikum-Web/assets/165764367/21981b0f-6ceb-403d-aa68-04bf05c8c6c8)
+
+
 <h2 class="code-line" data-line-start=130 data-line-end=131 ><a id="Penutup_130"></a>Penutup</h2>
 <ul>
 <li class="has-line-data" data-line-start="132" data-line-end="133">diperlukan untuk belajar HTML, CSS, dan JavaScript. lobih lanjut dikarenakan 3 bahasa pemrograman ini adalah dasar untuk mulai belajar menjadi seorang programer atau ahli IT, walaupun banyak sekali bahasa pemrograman yang lebih canggih dari HTML, CSS dan Javascript namun bahasa pemrograman ini masih sangat berguna dan belum di tinggalkan oleh orang orang dalam dunia industri.</li>
